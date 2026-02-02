@@ -37,17 +37,7 @@ body <- dashboardBody(
             # -- module output
             h2("Module"),
             p("This is an output from the module:"),
-            module_output_UI("shiny_module_id")),
-    
-    
-    # -- kitems: admin console
-    tabItem(tabName = "kitems_id",
-            
-            # -- Admin UI
-            fluidRow(
-              column(width = 12,
-                     
-                     kitems::admin_ui("shiny_module_id-kitems_id"))))
+            module_output_UI("shiny_module_id"))
     
     
   ) # tabItems

@@ -16,10 +16,6 @@ shinyServer(
       r <- reactiveValues()
       
       
-      # -- kitems: generate dynamic sidebar
-      output$menu <- renderMenu(kitems::dynamic_sidebar(r))
-      
-      
       # -------------------------------------
       # Launch modules
       # -------------------------------------
